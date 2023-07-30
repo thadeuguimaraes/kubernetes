@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: api-configmap
+data:
+  Mongo__Host: mongo-service
+  Mongo__DataBase: admin
