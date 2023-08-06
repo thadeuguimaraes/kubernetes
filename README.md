@@ -40,3 +40,13 @@
 - `Job e CronJob`
 - `Jobs`
 - `Cronjob`
+
+# Gerenciando a distribuição dos Pods
+
+- `Node Selector`
+- `Node Affinity`
+- `Pod Affnity e Pod Antiaffinity`
+- `Taint e Tolerations`
+- `PodAffinity e Pod Antiaffinity`
+- `Node Affinity Aplicação`
+- `Node MasterTaint`
