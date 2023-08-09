@@ -50,3 +50,11 @@
 - `PodAffinity e Pod Antiaffinity`
 - `Node Affinity Aplicação`
 - `Node MasterTaint`
+
+# Segurança no Kubernetes
+
+- `WaveNet no Kind`
+- `NetworkPolicy`
+- `ServiceAccount e RBAC`
+- `Service Account Exemplo`
+- `Criando Roles`

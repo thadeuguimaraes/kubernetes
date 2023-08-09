@@ -30,20 +30,20 @@ services:
       - nginx_net
   conversaotemperatura01:
     image: fabricioveronez/conversao-temperatura:v1
-    ports:
-      - 8083:8080
+    # ports:
+    #   - 8083:8080
     networks:
       - nginx_net
     
   conversaotemperatura02:
     image: fabricioveronez/conversao-temperatura:v1
-    ports:
-      - 8084:8080
+    # ports:
+    #   - 8084:8080
     networks:
       - nginx_net
   conversaotemperatura03:
     image: fabricioveronez/conversao-temperatura:v1
-    ports:
-      - 8085:8080
+    # ports:
+    #   - 8085:8080
     networks:
       - nginx_net
