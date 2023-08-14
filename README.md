@@ -58,3 +58,16 @@
 - `ServiceAccount e RBAC`
 - `Service Account Exemplo`
 - `Criando Roles`
+
+# Expondo aplicação com Ingress Controller (Nova versão do Ingress Controller)
+
+- `Instalação no K3D`
+- ``
+- ``
+- ``
+- ``
+- ``
+- ``
+- ``
+- ``
+- ``
