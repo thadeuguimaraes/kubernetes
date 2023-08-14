@@ -1,0 +1,10 @@
+apiVersion: v1 
+kind: ResourceQuota
+metadata:
+  name: compute-resource
+spec:
+  hard:
+    requests.cpu: "3000m"
+    requests.memory: "4Gi"
+    limits.cpu: "6"
+    limits.memory: "6Gi"
