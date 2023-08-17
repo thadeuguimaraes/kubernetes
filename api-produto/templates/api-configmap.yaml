@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metada:
+  name: {{ .Release.Name }}-api-configmap
+data:
+  Mongo__Host: {{ .Release.Name }}-mongo-service
+  Mongo__DataBase: {{ .Values.mongodb.databaseName }}
