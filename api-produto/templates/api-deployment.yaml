@@ -23,26 +23,29 @@ spec:
             memory: "32Mi"
           limits:
             cpu: "500m"
-            memory: "32Mi"
+            memory: "64Mi"
         envFrom:
-          - configMap:
-              name: {{ .Release.Name }}-api-configmap    
-        env:
-        - name: Mongo__User
-          valueFrom:
-            secretKeyRef:
-              key: MONGO_INITDB_ROOT_USERNAME
-              {{- if empty .Values.mongodb.existSecret }}
-              name: {{ .Release.Name }}-mongo-secret
-              {{- else }}
-              name: {{ .Values.mongodb.existSecret }}
-              {{- end }}
-        - name: Mongo_Password
-          valueFrom:
-            secretKeyRef:
-                key: MONGO_INITDB_ROOT_PASSWORD
-                {{- if empty .Values.mongodb.existSecret }}
-                name: {{ .Release.Name }}-mongo-secret
-                {{- else }}
-                name: {{ .Values.mongodb.existSecret }}
-                {{- end }}
+          - configMapRef:
+              name: {{ .Release.Name }}-api-configmap
+          - secretpRef:
+              name: {{ .Release.Name }}-api-secret
+
+        # env:
+        # - name: Mongo__User
+        #   valueFrom:
+        #     secretKeyRef:
+        #       key: MONGO_INITDB_ROOT_USERNAME
+        #       {{- if empty .Values.mongodb.existSecret }}
+        #       name: {{ .Release.Name }}-mongo-secret
+        #       {{- else }}
+        #       name: {{ .Values.mongodb.existSecret }}
+        #       {{- end }}
+        # - name: Mongo_Password
+        #   valueFrom:
+        #     secretKeyRef:
+        #         key: MONGO_INITDB_ROOT_PASSWORD
+        #         {{- if empty .Values.mongodb.existSecret }}
+        #         name: {{ .Release.Name }}-mongo-secret
+        #         {{- else }}
+        #         name: {{ .Values.mongodb.existSecret }}
+        #         {{- end }}

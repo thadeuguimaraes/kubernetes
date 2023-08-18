@@ -1,11 +1,19 @@
 api:
   image: fabricioveronez/pedelogo-catalogo:v1.0.0
-  serviceType: LoadBalancer
+  serviceType: ClusterIP
+  ingress: ["aulakubedev.com.br", "api.aulakubedev.com.br"]
 
 mongodb:
-  tag: 4.2.8
-  #existSecret: nome do secret
-  credentials:
+  auth:
+    rootPassowrd: mongoRoot 
     userName: mongouser
-    userPassword: mongopwd
-  databaseName: admin
+    password: mongopwd
+    database: produto
+  # tag: 4.2.8
+  # #existSecret: nome do secret
+  # credentials:
+  #   userName: mongouser
+  #   userPassword: mongopwd
+  # databaseName: admin
+  persistence:
+    enable: true
