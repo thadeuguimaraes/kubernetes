@@ -1,0 +1,1 @@
+A release {{ .Release.Name }} foi criado com sucesso

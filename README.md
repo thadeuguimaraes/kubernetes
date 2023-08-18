@@ -58,3 +58,29 @@
 - `ServiceAccount e RBAC`
 - `Service Account Exemplo`
 - `Criando Roles`
+
+# Expondo aplicação com Ingress Controller (Nova versão do Ingress Controller)
+
+- `Instalação no K3D`
+- `Como trabalhar com domínios em um ambiente local`
+- `Ingress básico`
+- `Ingress baseado em path`
+- `Ingress baseado em domínio`
+- `Criando uma rota padrão`
+- `Instalação do Ingress Controller na Digital Ocean`
+- `Definição de DNS`
+- `Alteração no manifesto do ingress`
+
+# Helm
+
+- `Manipulando repositórios`
+- `Instalando aplicações`
+- `Primeiro Helm Chart`
+- `Estrutura if/else`
+- `Estrutura de Loop`
+- `Named Templates`
+- `Dependências de Charts`
+- `Notes`
+
+# Entendo alguns padroes
+
