@@ -77,8 +77,22 @@
 - `Instalando aplicações`
 - `Primeiro Helm Chart`
 - `Estrutura if/else`
-- ``
-- ``
+- `Estrutura de Loop`
+- `Named Templates`
+- `Dependências de Charts`
+- `Notes`
+
+# Entendo alguns padroes
+
+- `Adapter`
+- `Ambassador`
+- `Controllers`
+- `Operators`
+# Estatégias de Deploy
+
+- `Recreate`
+- `Ramped`
+- `Blue/Green`
 - ``
 - ``
 - ``
