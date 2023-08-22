@@ -84,3 +84,15 @@
 
 # Entendo alguns padroes
 
+- `Adapter`
+- `Ambassador`
+- `Controllers`
+- `Operators`
+# Estatégias de Deploy
+
+- `Recreate`
+- `Ramped`
+- `Blue/Green`
+- ``
+- ``
+- ``
