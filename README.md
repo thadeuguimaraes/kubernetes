@@ -88,7 +88,7 @@
 - `Ambassador`
 - `Controllers`
 - `Operators`
-# Estatégias de Deploy
+# Estratégias de Deploy
 
 - `Recreate`
 - `Ramped`
