@@ -93,6 +93,8 @@
 - `Recreate`
 - `Ramped`
 - `Blue/Green`
-- ``
+- `Canary`
+# Traefik
+
 - ``
 - ``
