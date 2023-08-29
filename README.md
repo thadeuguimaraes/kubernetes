@@ -96,5 +96,10 @@
 - `Canary`
 # Traefik
 
+- `criando aplicação de Exemplo`
+- `Configurando Rota`
+- `Middleware`
+- `Dashboard`
+- ``
 - ``
 - ``
