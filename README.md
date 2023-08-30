@@ -100,6 +100,8 @@
 - `Configurando Rota`
 - `Middleware`
 - `Dashboard`
-- ``
-- ``
-- ``
+# Cert-Manager e Let's Encrypt
+
+- `Iniciando a Aplicação de Exemplo`
+- `Criando os Issuers de Homologação e Produção`
+- `Criando o Certificado e Configurando as Rotas`

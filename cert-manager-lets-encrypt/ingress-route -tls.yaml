@@ -1,0 +1,15 @@
+apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRoute
+metadata:
+  name: simpleingressroute-tls
+spec:
+  entryPoints:
+  - websecure
+  reoutes:
+  - matchs: Host(`devopsmt.com.br`)
+    kind: Rule
+    services:
+    - name: nginx-service
+      port: 80
+  tls:
+    secrectName: thadeu-net-secret

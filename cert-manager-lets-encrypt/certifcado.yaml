@@ -1,0 +1,11 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metada:
+  name: letsebcrypt-devopsmt.com.br-cert
+spec:
+  secrectName: thadeu-net-secret
+  issuerRef:
+    kind: ClusterUssuer
+    name: letsebcrypt-homolog
+  dnsNames:
+    - "devopsmt.com.br"
